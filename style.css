@@ -1,0 +1,471 @@
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@keyframes dissolvenza {
+    0%   {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+body {
+    background-color: #fff;
+    color: #fff;
+    opacity: 0%;
+    animation-name: dissolvenza;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+a {
+text-decoration: none;
+}
+.button {
+    width: 180px;
+    height: auto;
+    background-color: #0066b1;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.button2 {
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #000;
+    font-weight: bold;
+}
+.button3 {
+    width: 180px;
+    height: auto;
+    background-color: #ea0202;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+.button3 a {
+    color:#f6f6f6
+}
+.testo-bianco {
+    color: #fff;
+    text-align: justify;
+}
+
+
+/*! Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #fff;
+    padding: 10px;
+    background-color: #f6f6f6;
+    z-index: 1;
+}
+.logo {}
+
+.menu {}
+.menu li {
+    display: inline-block;
+}
+.menu a {
+    text-decoration: none;
+    padding: 15px;
+    position: relative;
+    transition: 1.33s ease-in-out;
+    color: #0066b1;
+} 
+.menu a::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 5px;
+    left: 0;
+    bottom: -2px;
+    transition: 1.33s ease-in-out;
+    background-color: #0066b1;
+}
+.menu a:hover::after {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    right: 0;
+    bottom: -2px;
+    transition: 1.33s ease-in-out;
+}
+
+.social {}
+.social li {
+    display: inline-block;
+}
+.hamburger {
+    display: none;
+}
+
+/*! Copertina*/
+.copertina {
+    /*background: url(./bmw-foto/bmw-copertina2.jpg);*/
+    background: url(https://www.motorisumotori.it/wp-content/uploads/2024/09/2022-bmw-ix1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.copertina2 {
+    background: url(./bmw-foto/bmw-sfondoP.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+
+}
+.copertina-text {
+    position: relative;
+    top:200px;
+    left:200px;
+    display: flex;
+    flex-direction: column;
+   
+} 
+.copertina2-text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 250px;
+    left: 110px;
+}
+
+.copertina-text h2 {
+    font-size: 140px;
+    color: #fff;
+}
+.copertina-text h4 {
+    font-size: 40px;
+    color: #fff;
+}
+.copertina-text a {
+    text-decoration: none;
+}
+
+/*! Shopping tools*/
+.shopping {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+}
+.shopping-top {
+    text-align: center;
+}
+.shopping-top h3 {
+    font-size:50px ;
+}
+.shopping-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    
+    
+}
+.shopping-card a {
+    text-decoration: none;
+}
+.shopping-card a:hover {
+    border: 3px solid #000;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/*! Modelli card*/
+.contenitore {
+    display: flex;
+    width: 1200px;
+    height: auto;
+    flex-wrap: wrap;
+    margin: 100px auto auto;
+    text-align: center;
+}
+.carta {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: auto;
+    margin: 100px auto auto;
+    
+}
+.carta p {
+    color: #777;
+}
+.carta img {
+    margin: auto;
+}
+.carta img:hover {
+    transform: scale(1.2);
+    transition: 1.5s;
+}
+
+/*! Carousel Elettric*/
+.offerte {
+    width: 1200px;
+    height: auto;
+    border-left: 1px solid black;
+    margin: 100px auto auto;
+    padding-left: 50px;
+   
+}
+/*! Vantaggi*/
+.vantaggi {
+    display: flex;
+    flex-direction: column;
+    /*gap: 60px;*/
+    justify-content: space-between;
+    width: 1200px;
+    height: auto;
+    border-left: 1px solid black;
+    margin: 100px auto auto;
+    padding-left: 50px;
+   
+}
+.vantaggi p {
+    color: #777;
+}
+.vantaggi-top {
+    max-width: 1200px;
+    margin: auto;
+    /*padding-left: 50px;*/
+    text-align: justify;
+}
+
+.vantaggi-bottom {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    
+}
+/*!Tecnologia*/
+.tecnologia {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1200px;
+    height: auto;
+    border-left: 1px solid black;
+    margin: 100px auto auto;
+    padding-left: 50px;
+
+}
+.tecnologia-top {
+    display: flex;
+}
+.tecnologia-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.tecnologia-bottom li {
+    color: #777;
+}
+
+/*! Concessionarie*/
+.concessionarie {
+    max-width: 1200px;
+    margin: 100px auto auto;
+    height: auto;
+    
+}
+.concessionarie iframe {
+    width: 100%;
+}
+
+/*!Form*/
+.contact  {
+    width: 70%;
+    height: auto;
+    margin: 150px auto 200px;
+    border: 2px solid #0066b1;
+    padding: 50px;
+    color: #777;
+   
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact input {
+    margin-bottom: 10px;
+    margin-right: 20px;
+    
+}
+.contact legend {
+    color: #0066b1;
+}
+.contact h3 {
+    color: #0066b1;
+}
+.contact-inside {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/*!dashboard*/
+.mostraDati{
+    width: 70%;
+    height: auto;
+    margin: 150px auto auto;
+    border: 2px solid #0066b1;
+    padding: 50px;
+    color: #777;
+    text-align: center;
+}
+/*!prenotazioni*/
+#risultato-prenotazioni {
+    color: green;
+    width: 50%;
+    margin:100px auto;
+}
+/*! Footer*/
+.footer {
+    display: flex;
+    align-items:start;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: auto;
+    height: auto;
+    margin: 100px auto auto;
+    background-color:#f6f6f6 ;
+}
+.settore {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: auto;
+    text-align: center;
+    
+    
+}
+
+.settore a {
+    text-decoration: none;
+    color: #777;
+    font-weight: bold;
+    font-size: 14px;
+}
+.settore a:hover {
+    color: #000;
+}
+.settore p {
+    color:#404040;
+    margin-bottom: 15px;
+}
+
+
+/*! media query 768 px*/
+
+@media screen and (max-width:768px) {
+    /*header*/
+    .menu {position: absolute;
+    top: 0;
+    right:-100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    padding-top: 100px;}
+    .menu li {display: block;
+        margin-bottom: 50px;}
+    .menu li a {
+    font-size: 30px;}
+    .menu-open{ right: 0;}
+    .hamburger {
+        display: block;
+        z-index: 2;
+    }
+
+    /* Shopping tools*/
+    .cards {
+        width: 100%;
+    }
+
+    /*!Modelli*/
+    /*Contenitore*/
+    .contenitore {
+        width: 100%;
+        flex-direction: column;
+    }
+    /*!All Elettric*/
+    /*schede vantaggi*/
+    .offerte {
+        width: 90%;
+        border: 0px;
+    }
+    .vantaggi {
+        width: 100%;
+    }
+    .vantaggi-top {
+        width: 100%;
+        text-align: center;
+    }
+    .vantaggi-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    /*tecnologia*/
+    .tecnologia {
+        width: 100%;
+    }
+    .tecnologia-bottom {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    /*!Concessionarie*/
+    .concessionarie {
+        width: 100%;
+        text-align: center;
+    }
+    /*!Contatti*/
+    .contact {
+        width: 90%;
+        
+    }
+
+    /*!Dashboard*/
+    .mostraDati {
+        width: 50%;
+    }
+
+    /*!Footer*/
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap:15px
+    }
+
+}
